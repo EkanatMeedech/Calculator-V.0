@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p class="name-program">Calculator Program</p>
+    <div class="calculator">
+        
+        <div class="display-all">
+            <div class="display-before">
+                <p id="display-before"></p>
+            </div>
+            <div class="display-af">
+                <p id="display"></p>
+            </div>
+        </div>
+        <div class="button">
+            <div class="row">
+                <button class="button-clear" onclick="click_clear()">C</button>
+                <button class="operator" onclick="addToDisplay('(')">(</button>
+                <button class="operator" onclick="addToDisplay(')')">)</button>
+                <button class="operator" onclick="addToDisplay('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="button-number" onclick="addToDisplay('7')">7</button>
+                <button class="button-number" onclick="addToDisplay('8')">8</button>
+                <button class="button-number" onclick="addToDisplay('9')">9</button>
+                <button class="operator" onclick="addToDisplay('*')">x</button>
+            </div>
+            <div class="row">
+                <button class="button-number" onclick="addToDisplay('4')">4</button>
+                <button class="button-number" onclick="addToDisplay('5')">5</button>
+                <button class="button-number" onclick="addToDisplay('6')">6</button>
+                <button class="operator" onclick="addToDisplay('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="button-number" onclick="addToDisplay('1')">1</button>
+                <button class="button-number" onclick="addToDisplay('2')">2</button>
+                <button class="button-number" onclick="addToDisplay('3')">3</button>
+                <button class="operator" onclick="addToDisplay('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="button-number" onclick="addToDisplay('0')">0</button>
+                <button class="button-number" onclick="addToDisplay('.')">.</button>
+                <button class="operator" onclick="click_equal()">=</button>
+                <button class="operator" onclick="deleteText()"><</button>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
